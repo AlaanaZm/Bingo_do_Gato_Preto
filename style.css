@@ -1,0 +1,42 @@
+
+
+body {
+    text-align: center;
+}
+
+.cartela {
+    max-width: 500px;
+    height: 500px;
+    margin: auto;
+    
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: blue;
+}
+
+tr {
+    width: 100%;
+    height: 83px;
+    background-color: blueviolet;
+}
+
+td {
+    width: 83px;
+    height: 100%;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+
+.bingo {
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+
+

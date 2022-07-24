@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo!</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./script.js"></script>
+
+</head>
+
+<body onload="load()">
+
+    <h1>Bem vindo ao Bingo do Gato Preto</h1>
+    <h2>Escolha sua cartela:</h2>
+
+    <button id="escolher" onclick="escolher()">Escolher cartela</button>
+
+    <br>
+    <br>
+
+    <div class="cartela">
+
+        <table>
+
+            <tr class="bingo">
+                <td>B</td>
+                <td>I</td>
+                <td>N</td>
+                <td>G</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td class="linhaB" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)" ></td>
+                <td class="linhaI" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaN" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaG" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaO" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+            </tr>
+
+            <tr>
+                <td class="linhaB" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaI" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaN" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaG" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaO" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+            </tr>
+            <tr>
+                <td class="linhaB" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaI" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaN"><img src="./cat.png" alt="" width="75px"></td>
+                <td class="linhaG" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaO" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+            </tr>
+            <tr>
+                <td class="linhaB" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaI" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaN" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaG" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaO" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+            </tr>
+            <tr>
+                <td class="linhaB" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaI" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaN" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaG" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+                <td class="linhaO" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)"></td>
+            </tr>
+
+        </table>
+
+
+
+
+    </div>
+
+    <br>
+
+    <button id="comecar" onclick="guardar()">Vamos começar!</button>
+
+    <button id="terminar" onclick="limpar()" disabled>Terminar</button>
+    <br><br>
+
+    <button id="sortear" onclick="sortear()" disabled>SORTEAR!</button>
+    <br><br>
+
+    <h1>Número sorteado:</h1>
+
+    <h1 id="num"></h1>
+    <div id="result" style="width: 100%"></div>
+
+
+
+</body>
+
+</html>
