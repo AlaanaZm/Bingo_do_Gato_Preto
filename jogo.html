@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo!</title>
+
+    <link rel="stylesheet" href="./style/style.css">
+
+    <script src="./js/script.js"></script>
+
+</head>
+
+<body onload="load()">
+
+    <div class="container">
+
+        <div class="cartela fadeI">
+
+            <table>
+
+                <tr class="bingo">
+                    <td>B</td>
+                    <td>I</td>
+                    <td>N</td>
+                    <td>G</td>
+                    <td>O</td>
+                </tr>
+                <tr>
+                    <td class="linhaB" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaI" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaN" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaG" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaO" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="linhaB" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaI" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaN" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaG" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaO" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="linhaB" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaI" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaN img"></td>
+                    <td class="linhaG" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaO" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="linhaB" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaI" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaN" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaG" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaO" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="linhaB" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaI" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaN" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaG" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                    <td class="linhaO" onclick="selecionar(this)" onmouseover="onOver(this)" onmouseout="onOut(this)">
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <div class="listanum fadeI">
+
+            <h1 id="escolhacartela" class="pulse">Escolha sua cartela</h1>
+
+            <div class="botao hover" id="escolher" onclick="escolher()">
+                Escolher cartela
+            </div>
+
+            <h1 id="numsorteado" class="fadeI" style="display: none;">Número sorteado</h1>
+
+            <h1 id="num"></h1>
+            <div id="result" style="width: 100%"></div>
+
+            <div class="botao pulse" id="sortear" onclick="sortear()" onmouseover="onOver(this)"
+                onmouseout="onOut(this)" style="display: none;">Sortear</div>
+
+            <div class="botao hover" style="background-color: black;" id="comecar" onclick="guardar()">Vamos Começar!
+            </div>
+            <div class="botao hover" style="background-color: black; display: none;" id="terminar" onclick="limpar()">Terminar</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
