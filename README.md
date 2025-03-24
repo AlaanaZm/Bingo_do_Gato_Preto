@@ -8,5 +8,7 @@ O jogo segue, basicamente, a proposta de um jogo de bingo:
 - Sorteie o número
 - Marque na cartela o número sorteado até completar toda a cartela.
 
+url: bingodogatopreto.zcodigo.com.br
+
 ✌
   
